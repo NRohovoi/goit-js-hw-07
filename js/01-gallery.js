@@ -33,7 +33,7 @@ const onGalleryItemClick = (e) => {
     return;
   }
   let enlargedPicture = basicLightbox.create(`
-    <img src="${e.target.dataset.source}" width="800" height="600">
+    <img src="${e.target.dataset.source}" width="1000" height="800">
 `, {
   onShow: (enlargedPicture) => {window.addEventListener('keydown', onEscKeyPress)},
   onClose: (enlargedPicture) =>{window.removeEventListener('keydown', onEscKeyPress)}
